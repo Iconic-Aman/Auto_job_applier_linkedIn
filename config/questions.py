@@ -14,10 +14,10 @@ years_of_experience = "1"          # A number in quotes Eg: "0","1","2","3","4",
 require_visa = "No"               # "Yes" or "No"
 
 # What is the link to your portfolio website, leave it empty as "", if you want to leave this question unanswered
-website = "https://github.com/aman012"                        # "www.example.bio" or "" and so on....
+website = "https://botzcoder.com"                              # "www.example.bio" or "" and so on....
 
 # Please provide the link to your LinkedIn profile.
-linkedIn = "https://www.linkedin.com/in/aman-kumar-srivastava"       # "https://www.linkedin.com/in/example" or "" and so on...
+linkedIn = "https://www.linkedin.com/in/iconic-aman"              # "https://www.linkedin.com/in/example" or "" and so on...
 
 # What is the status of your citizenship? # If left empty as "", tool will not answer the question. However, note that some companies make it compulsory to be answered
 # Valid options are: "U.S. Citizen/Permanent Resident", "Non-citizen allowed to work for any employer", "Non-citizen allowed to work for current employer", "Non-citizen seeking work authorization", "Canadian Citizen/Permanent Resident" or "Other"
@@ -68,7 +68,7 @@ then it will divide by 30 or 7 and answer respectively. Examples:
 '''
 
 # Your LinkedIn headline in quotes Eg: "Software Engineer @ Google, Masters in Computer Science", "Recent Grad Student @ MIT, Computer Science"
-linkedin_headline = "Data Engineer with hands-on production experience building modern lakehouse pipelines" # "Headline" or "" to leave this question unanswered
+linkedin_headline = "Data Engineer | Pipeline Automation | Cloud Lakehouse Architecture" # "Headline" or "" to leave this question unanswered
 
 # Your summary in quotes, use \n to add line breaks if using single quotes "Summary".You can skip \n if using triple quotes """Summary"""
 linkedin_summary = """
@@ -97,48 +97,55 @@ linkedin.com/in/aman-kumar-srivastava | github.com/aman012
 user_information_all ="""
 --- PROFESSIONAL PROFILE ---
 Aman Kumar Srivastava
-Data Engineer | AI Engineer
+Data Engineer | Pipeline Automation | Cloud Lakehouse Architecture
+Email: aman.apk01@gmail.com | Phone: +91-7739704188
+Portfolio: https://botzcoder.com | LinkedIn: https://www.linkedin.com/in/iconic-aman | GitHub: https://github.com/Iconic-Aman
+Location: Varanasi, U.P, India
 Experience: 1 Year
 Current CTC: ₹300,000 | Expected CTC: ₹600,000
 Notice Period: 10 Days
 
 --- PROFESSIONAL SUMMARY ---
-Data Engineer with hands-on production experience building modern lakehouse pipelines on the Cloudflare + Trino + Apache Iceberg stack. Designed and maintained ELT workflows ingesting data from Cloudflare D1 into R2-backed cold storage, configured federated SQL layers via Trino for schema-on-read analytics, and orchestrated 10+ automation workflows using n8n. Strong Python and SQL foundation; experienced deploying scalable backends with FastAPI and Docker.
+Data Engineer with hands-on production experience building modern lakehouse pipelines on the Cloudflare + Trino + Apache Iceberg stack. Designed and maintained ELT workflows ingesting data from Cloudflare D1 into R2-backed cold storage, configured federated SQL layers via Trino for schema-on-read analytics, and orchestrated 10+ automation workflows using n8n. Strong Python and SQL foundation; experienced deploying scalable FastAPI backends, Docker-based microservices, and full-stack AI applications.
 
 --- TECHNICAL SKILLS ---
-Data Engineering: Trino, Apache Iceberg, Apache Hive, ELT Pipelines, Data Lake Architecture, Cloudflare D1 & R2, PostgreSQL, MySQL, Pandas, NumPy
-Workflow & Analytics: n8n, Apache Superset, Metabase, Data Lineage, Data Quality Checks, Self-Serve BI, KPI Dashboards
+Data Engineering: Apache Iceberg, Trino, Apache Hive, ELT/ETL Pipelines, Data Lake Architecture, Cloudflare D1 & R2, PostgreSQL, MySQL, Pandas, NumPy
+Workflow & Analytics: n8n, Apache Superset, Metabase, Data Quality Checks, Self-Serve BI, KPI Dashboards
 Backend & DevOps: FastAPI, RESTful APIs, Docker, Docker Swarm, GitHub Actions, CI/CD Pipelines, AWS, GCP, Cloudflare, Linux
-ML & AI: PyTorch, Scikit-learn, Hugging Face Transformers, Prompt Engineering
-Languages: Python, SQL, HTML, CSS
+ML & AI: PyTorch, Scikit-learn, Hugging Face Transformers, LoRA Fine-Tuning, Mistral-7B, Dialogflow NLP, Prompt Engineering
+Frontend & Other: Next.js, HTML, CSS, Google OAuth, SSE Streaming, Vercel, Render
+Languages: Python, SQL, JavaScript
 
 --- WORK EXPERIENCE ---
-HumanizeIQ.ai | Data Engineer | Nov 2025 -- Present
-- Designed and built a production ELT pipeline ingesting data from Cloudflare D1 into Cloudflare R2.
-- Configured Trino over R2-backed Apache Iceberg catalogs as a federated SQL engine.
-- Orchestrated 10+ n8n workflows automating D1-to-R2 sync and Trino query triggering.
-- Built Metabase dashboards on the Trino layer for self-serve BI reporting and KPI tracking.
-- Maintained data quality checks and lineage documentation, reducing discrepancies by 50%.
+HumanizeIQ.ai | Data Engineer — Data Lake and Workflow Automation | Nov 2025 -- Present | Remote
+- Built a data pipeline that moves data from Cloudflare D1 into Cloudflare R2 storage, and set up Trino with Apache Iceberg so the team can run SQL queries directly on stored data without moving it.
+- Created 10+ automation workflows using n8n to handle data syncing, query triggering, and result delivery automatically — saving around 8 hours of manual work every week.
+- Set up data quality checks and tracking across the entire pipeline from D1 to Metabase, reducing data discrepancies by ~50%.
 
-HumanizeIQ.ai | AI Engineer Intern | June 2025 -- Oct 2025
-- Architected 5+ Apache Superset dashboards serving 300+ users, cutting turnaround by 40%.
-- Built and deployed production ML solutions using FastAPI and Scikit-learn.
-- Drove adoption of dashboards across 3 business teams, reducing ad-hoc SQL requests by 60%.
+HumanizeIQ.ai | AI Engineer Intern | June 2025 -- Oct 2025 | Remote
+- Architected 5+ Apache Superset dashboards serving 300+ active users, cutting reporting turnaround by 40% and improving load performance by 35% through optimized PostgreSQL schema design and FastAPI backends.
+- Built and deployed production ML solutions using FastAPI and Scikit-learn, managing the full lifecycle from model training to live deployment.
+- Drove adoption of dashboards across 3 business teams, reducing ad-hoc SQL requests by 60%; mentored 3 junior interns who independently owned reporting tracks.
 
 --- KEY PROJECTS ---
-PDF Summarization --- Full-Stack AI Web App (botzcoder.com)
-- Engineered PDF ingestion and storage on Cloudflare R2 with async FastAPI workers.
-- Built full-stack app with Next.js frontend, FastAPI backend, and Neon PostgreSQL.
-- Applied LoRA-based fine-tuning on Mistral-7B, cutting trainable parameters by 99%.
+PDF Summarization — Full-Stack AI Web App | https://pdf.botzcoder.com
+Tech: FastAPI, Next.js, PostgreSQL, Cloudflare R2, LoRA, Mistral-7B
+- Engineered PDF ingestion and per-user storage on Cloudflare R2 with async FastAPI workers handling concurrent summarization jobs and live SSE token streaming to the client.
+- Built a full-stack application with Next.js frontend, FastAPI backend, and Neon PostgreSQL — deployed on Vercel and Render with Google OAuth and per-user job history.
+- Applied LoRA-based parameter-efficient fine-tuning on Mistral-7B, cutting trainable parameters by 99% vs full fine-tuning; packaged the adapter as a microservice on Hugging Face Spaces.
 
-AI Chatbot --- Food Delivery Platform
-- Built FastAPI + MySQL backend handling concurrent order sessions with ACID transactions.
-- Optimized query execution, reducing p95 response time from 800ms to 120ms.
-- Integrated Dialogflow NLP for multi-intent classification (tracking, lookup, complaints).
+AI Chatbot — Food Delivery Platform | https://github.com/Iconic-Aman/ChatBot-for-food-delivery
+Tech: Python, FastAPI, Dialogflow, MySQL, NLP
+- Built a FastAPI and MySQL backend to handle multiple order sessions at once with proper transaction management, ensuring data stays consistent across concurrent requests.
+- Integrated Dialogflow NLP to understand user intents like order tracking, item lookup, and complaints.
 
 --- EDUCATION ---
 Indian Institute of Information Technology, Kottayam (2020 -- 2024)
 B.Tech, Computer Science & Engineering | GPA: 7.48 / 10.0
+
+--- CERTIFICATIONS ---
+Generative AI with Large Language Models — DeepLearning.AI / Coursera (2024)
+Prompt Engineering for AI Models — LetsUpgrade (2024)
 """
 
 ##<
