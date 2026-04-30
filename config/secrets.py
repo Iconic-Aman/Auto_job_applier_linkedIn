@@ -56,7 +56,7 @@ If you are using ollama, you MUST put "not-needed".
 '''
 
 # Your LLM model name or other AI model name
-llm_model = "qwen/qwen2.5-7b-instruct"
+llm_model = os.getenv("LLM_MODEL", "meta/llama-3.1-8b-instruct")  # Reads from .env — set LLM_MODEL= there
 
 llm_spec = "openai-like"               # Using openai-like since NVIDIA exposes OpenAI-compatible API
 '''

@@ -885,6 +885,21 @@ def apply_to_jobs(search_terms: list[str]) -> None:
 
         apply_filters()
 
+        # ──────────────────────────────────────────────────────────────────────────
+        # 🕐 LAST-1-HOUR HACK: LinkedIn's "Past 24 hours" sets f_TPR=r86400.
+        #    We rewrite it to r3600 (3600 sec = 1 hour) to get the freshest jobs.
+        #    This mirrors the manual URL edit the user does after applying filters.
+        # ──────────────────────────────────────────────────────────────────────────
+        try:
+            current_url = driver.current_url
+            if "f_TPR=r86400" in current_url:
+                new_url = current_url.replace("f_TPR=r86400", "f_TPR=r3600")
+                print_lg(f"⏱️  Rewriting URL to last-1-hour window: {new_url}")
+                driver.get(new_url)
+                buffer(3)  # Wait for page to reload with new filter
+        except Exception as e:
+            print_lg("Failed to rewrite f_TPR URL, continuing with 24h filter.", e)
+
         current_count = 0
         try:
             while current_count < switch_number:
